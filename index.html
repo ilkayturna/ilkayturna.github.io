@@ -9,17 +9,24 @@
 
     <style type="text/css">
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f3f3f3;
-            overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url("background.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        
         }
+
+        /* other styles */
+
         img {
             position: absolute;
-            top: 40px;
+            top: -150px;
             left: 50%;
             transform: translateX(-50%);
             width: 150px;
@@ -29,21 +36,21 @@
         }
 
         #textBody {
-            position: 40px
+            position: absolute;
+            top: 240px;
             text-align: center;
             padding-top: 200px;
-            height: 150px
-            
+            height: 150px;
         }
     </style>
 
-    <title>İlkay Turna'nın kisisel web sitesi</title>
+    <title>Ilkay Turna'nın kisisel web sitesi</title>
 </head>
 
 <body id="backgroundBody">
     <img src="sjw.png" alt="Profil Resmi">
     <div id="textBody">
-        <h1 style="font-size:300%;">İlkay Turna</h1>
+        <h1 style="font-size:300%;">Ilkay Turna</h1>
         <p style="font-size:160%;">YBS Uzmanı/Yazılım Geliştiricisi</p>
         <div>
             <a href="buraya yaz" class="fa fa-twitter" target="_blank" rel="noopener noreferrer"></a>
