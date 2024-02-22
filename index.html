@@ -9,30 +9,34 @@
 
     <style type="text/css">
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-image: url("background.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            overflow: hidden;
-        }
-    
-        /* other styles */
-    
-        img {
-            position: absolute;
-            top: -150px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* other styles */
+
+img.sjw-image {
+  position: absolute;
+  top: 50px; /* adjust the top position to move the image up */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px; /* increase the width */
+  height: 200px; /* increase the height */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+                    /* other styles */
+       
+
     
         #textBody {
             position: absolute;
