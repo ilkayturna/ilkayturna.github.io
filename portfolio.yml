@@ -1,0 +1,14 @@
+- title: Proje 1
+  description: Bu proje hakkında kısa bir açıklama.
+  image: proje1.png
+  link: /proje1
+
+- title: Proje 2
+  description: Bu proje hakkında kısa bir açıklama.
+  image: proje2.png
+  link: /proje2
+
+- title: Proje 3
+  description: Bu proje hakkında kısa bir açıklama.
+  image: proje3.png
+  link: /proje3
