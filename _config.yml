@@ -47,6 +47,22 @@ plainwhite:
     # - username: jekyll2
     #   instance: example.com
 
+- title: Proje 1
+  description: Bu proje hakkında kısa bir açıklama.
+  image: proje1.png
+  link: /proje1
+
+- title: Turna Elektrik Websitesi
+  description: Bu proje hakkında kısa bir açıklama.
+  image: proje2.png
+  link: /proje2
+
+- title: Proje 3
+  description: Bu proje hakkında kısa bir açıklama.
+  image: proje3.png
+  link: /proje3
+
+
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:
