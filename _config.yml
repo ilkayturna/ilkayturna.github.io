@@ -26,9 +26,9 @@ plainwhite:
     - post
   # generate social links in footer
   social_links:
-    twitter: İlkay Turna
-    github:  lkayturna
-    linkedIn: in/ilkayturna
+    #twitter: İlkay Turna
+    github:  https://github.com/ilkayturna
+    linkedIn: www.linkedin.com/in/ilkay-t-ba3aa6237
     #dribbble: jekyll
     #flickr:   jekyll
     #instagram: jekyll
