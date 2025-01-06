@@ -1101,8 +1101,27 @@ section .container {
   display: flex;
   flex-wrap: wrap;
 }
+.custom-item {
+  width: 30%; 
+ /* Her öğe genişliği */
+}
 
 .col-lg-4 {
-  flex: 1 1 33%;
+  flex: 25%;
   margin: 10px;
+}
+
+.portfolio-container {
+  display: flex; /* Flexbox kullanarak öğeleri yan yana diz */
+  flex-wrap: wrap; /* Öğelerin taşmasını engellemek ve bir sonraki satıra geçmesini sağlamak */
+  gap: 20px; /* Öğeler arasında boşluk bırakmak */
+}
+
+.portfolio-item {
+  flex: 1 1 30%; /* Öğelerin genişliğini %30 yapmak, taşmaları engeller */
+  box-sizing: border-box; /* Border ve padding dahil olsun */
+}
+
+.portfolio-wrap {
+  position: relative; /* İçeriğin düzgün yerleşmesi için */
 }
