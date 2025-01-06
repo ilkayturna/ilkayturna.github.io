@@ -1096,3 +1096,13 @@ section .container {
     transform: translateX(-50%);
   }
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-lg-4 {
+  flex: 1 1 33%;
+  margin: 10px;
+}
