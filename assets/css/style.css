@@ -119,6 +119,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 6px;
   margin-top: 12px;
+  margin-left: auto;        /* YENİ: Sağa yasla */
+  margin-right: 0;          /* YENİ: Sağdan boşluk sıfır */
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 13px;

@@ -509,11 +509,17 @@
     function switchLanguage(lang) {
       currentLang = lang;
 
-      // Tüm data-tr/data-en
+      // TÜM data-tr/data-en içeren elementleri değiştir
       document.querySelectorAll("[data-tr]").forEach(el => {
         const trText = el.getAttribute("data-tr");
-        const enText = el.getAttribute("data-en") || trText;
-        el.innerHTML = lang === "tr" ? trText : enText;
+        const enText = el.getAttribute("data-en");
+
+        // Eğer data-en yoksa, TR metnini kullan
+        if (enText !== null) {
+          el.innerHTML = lang === "tr" ? trText : enText;
+        } else {
+          el.innerHTML = trText; // fallback
+        }
       });
 
       // Aktif buton
@@ -521,8 +527,10 @@
         btn.classList.toggle("active", btn.dataset.lang === lang);
       });
 
-      // Typed.js
-      if (window.typedInstance) window.typedInstance.destroy();
+      // Typed.js güncelle
+      if (window.typedInstance) {
+        window.typedInstance.destroy();
+      }
       const strings = lang === "tr" 
         ? ["SAP Danışmanı", "Teknoloji Sever", "Hayat Boyu Öğrenci :)"]
         : ["SAP Consultant", "Tech Enthusiast", "Lifelong Learner :)"];
@@ -535,19 +543,20 @@
       });
     }
 
+    // Butonlara tıklama
     langBtns.forEach(btn => {
-      btn.addEventListener("click", function () {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
         if (this.dataset.lang !== currentLang) {
           switchLanguage(this.dataset.lang);
         }
       });
     });
 
-    // Başlangıç
+    // Sayfa yüklendiğinde TR ile başla
     switchLanguage("tr");
   });
 </script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>
