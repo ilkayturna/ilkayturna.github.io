@@ -503,13 +503,13 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const langBtns = document.querySelectorAll(".language-toggle .lang-btn");
+    const langBtns = document.querySelectorAll(".lang-switcher .lang-btn");
     let currentLang = "tr";
 
     function switchLanguage(lang) {
       currentLang = lang;
 
-      // Tüm data-tr/data-en içeren elementleri değiştir
+      // Tüm data-tr/data-en
       document.querySelectorAll("[data-tr]").forEach(el => {
         const trText = el.getAttribute("data-tr");
         const enText = el.getAttribute("data-en") || trText;
@@ -521,7 +521,7 @@
         btn.classList.toggle("active", btn.dataset.lang === lang);
       });
 
-      // Typed.js güncelle
+      // Typed.js
       if (window.typedInstance) window.typedInstance.destroy();
       const strings = lang === "tr" 
         ? ["SAP Danışmanı", "Teknoloji Sever", "Hayat Boyu Öğrenci :)"]
@@ -536,8 +536,7 @@
     }
 
     langBtns.forEach(btn => {
-      btn.addEventListener("click", function (e) {
-        e.preventDefault();
+      btn.addEventListener("click", function () {
         if (this.dataset.lang !== currentLang) {
           switchLanguage(this.dataset.lang);
         }

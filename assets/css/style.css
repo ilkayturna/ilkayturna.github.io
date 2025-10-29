@@ -113,79 +113,57 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
 }
 
-/* ====================== DİL DEĞİŞTİRME BUTONU ====================== */
-.language-toggle {
+/* ====================== PROFESYONEL DİL BUTONU ====================== */
+.lang-switcher {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
+  gap: 6px;
   margin-top: 12px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
 }
 
-.language-toggle .lang-btn {
+.lang-switcher .lang-btn {
   background: transparent;
-  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border: 1.4px solid rgba(255, 255, 255, 0.4);
   color: #fff;
-  padding: 6px 12px;
+  padding: 5px 10px;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 13px;
-  min-width: 36px;
+  font-size: 12px;
+  min-width: 32px;
+  font-weight: 600;
 }
 
-.language-toggle .lang-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+.lang-switcher .lang-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
   border-color: #12D640;
   color: #12D640;
 }
 
-.language-toggle .lang-btn.active {
+.lang-switcher .lang-btn.active {
   background: #12D640;
   color: white;
   border-color: #12D640;
-  box-shadow: 0 0 8px rgba(18, 214, 64, 0.3);
+  box-shadow: 0 0 6px rgba(18, 214, 64, 0.3);
 }
 
-.language-toggle .separator {
-  color: rgba(255, 255, 255, 0.5);
+.lang-switcher .divider {
+  color: rgba(255, 255, 255, 0.4);
   font-weight: 300;
 }
 
-/* Mobil uyum */
+/* Mobil */
 @media (max-width: 768px) {
-  .language-toggle {
+  .lang-switcher {
     margin-top: 10px;
-    font-size: 13px;
-  }
-  .language-toggle .lang-btn {
-    padding: 5px 10px;
     font-size: 12px;
   }
-}
-
-#header .social-links a:hover {
-  background: #1c7d32;
-}
-
-@media (max-width: 992px) {
-  #header h1 {
-    font-size: 36px;
-  }
-  #header h2 {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  #header .social-links {
-    margin-top: 15px;
-  }
-  #header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .lang-switcher .lang-btn {
+    padding: 4px 8px;
+    font-size: 11px;
   }
 }
 
