@@ -75,12 +75,12 @@
           <a href="mailto:ilkayt1919@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
       </div>
 
-      <!-- YENİ: Dil Değiştirme Butonu -->
-      <div class="language-switcher">
-        <a href="#" class="lang-btn active" data-lang="tr">TR</a>
-        <span>|</span>
-        <a href="#" class="lang-btn" data-lang="en">EN</a>
-      </div>
+        <!-- Dil Değiştirme Butonu - Profesyonel -->
+        <div class="language-toggle">
+          <button class="lang-btn active" data-lang="tr">TR</button>
+          <span class="separator">|</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
 
     </div>
   </header><!-- End Header -->
@@ -439,50 +439,53 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
 
-  <!-- Dil Değiştirme Script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const langBtns = document.querySelectorAll(".lang-btn");
-      let currentLang = "tr";
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const langBtns = document.querySelectorAll(".language-toggle .lang-btn");
+    let currentLang = "tr";
 
-      function switchLanguage(lang) {
-        currentLang = lang;
-        document.querySelectorAll("[data-tr]").forEach(el => {
-          const trText = el.getAttribute("data-tr");
-          const enText = el.getAttribute("data-en") || trText;
-          el.innerHTML = lang === "tr" ? trText : enText;
-        });
+    function switchLanguage(lang) {
+      currentLang = lang;
 
-        langBtns.forEach(btn => {
-          btn.classList.toggle("active", btn.dataset.lang === lang);
-        });
-
-        // Typed.js güncelle
-        if (window.typedInstance) {
-          window.typedInstance.destroy();
-        }
-        const strings = lang === "tr" 
-          ? ["SAP Danışmanı", "Teknoloji Sever", "Hayat Boyu Öğrenci :)"]
-          : ["SAP Consultant", "Tech Enthusiast", "Lifelong Learner :)"];
-        window.typedInstance = new Typed('.typing', {
-          strings: strings,
-          loop: true,
-          typeSpeed: 65,
-          backSpeed: 65
-        });
-      }
-
-      langBtns.forEach(btn => {
-        btn.addEventListener("click", function (e) {
-          e.preventDefault();
-          switchLanguage(this.dataset.lang);
-        });
+      // Tüm data-tr/data-en içeren elementleri değiştir
+      document.querySelectorAll("[data-tr]").forEach(el => {
+        const trText = el.getAttribute("data-tr");
+        const enText = el.getAttribute("data-en") || trText;
+        el.innerHTML = lang === "tr" ? trText : enText;
       });
 
-      // İlk yüklemede TR
-      switchLanguage("tr");
+      // Aktif buton
+      langBtns.forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.lang === lang);
+      });
+
+      // Typed.js güncelle
+      if (window.typedInstance) window.typedInstance.destroy();
+      const strings = lang === "tr" 
+        ? ["SAP Danışmanı", "Teknoloji Sever", "Hayat Boyu Öğrenci :)"]
+        : ["SAP Consultant", "Tech Enthusiast", "Lifelong Learner :)"];
+      
+      window.typedInstance = new Typed('.typing', {
+        strings: strings,
+        loop: true,
+        typeSpeed: 65,
+        backSpeed: 65
+      });
+    }
+
+    langBtns.forEach(btn => {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (this.dataset.lang !== currentLang) {
+          switchLanguage(this.dataset.lang);
+        }
+      });
     });
-  </script>
+
+    // Başlangıç
+    switchLanguage("tr");
+  });
+</script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

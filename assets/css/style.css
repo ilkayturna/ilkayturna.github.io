@@ -113,24 +113,58 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
 }
 
-.language-switcher {
-  margin-top: 15px;
-  text-align: center;
+/* ====================== DİL DEĞİŞTİRME BUTONU ====================== */
+.language-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
+  font-size: 14px;
 }
 
-.language-switcher .lang-btn {
+.language-toggle .lang-btn {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
   color: #fff;
-  text-decoration: none;
-  padding: 5px 8px;
-  border-radius: 4px;
-  transition: all 0.3s;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  min-width: 36px;
 }
 
-.language-switcher .lang-btn:hover,
-.language-switcher .lang-btn.active {
-  color: #12D640;
+.language-toggle .lang-btn:hover {
   background: rgba(255, 255, 255, 0.1);
+  border-color: #12D640;
+  color: #12D640;
+}
+
+.language-toggle .lang-btn.active {
+  background: #12D640;
+  color: white;
+  border-color: #12D640;
+  box-shadow: 0 0 8px rgba(18, 214, 64, 0.3);
+}
+
+.language-toggle .separator {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+  .language-toggle {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .language-toggle .lang-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
 }
 
 #header .social-links a:hover {
