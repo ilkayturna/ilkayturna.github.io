@@ -530,36 +530,62 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Interests
---------------------------------------------------------------*/
+/* ====================== İLGİ ALANLARI - GELİŞTİRİLMİŞ ====================== */
 .interests .icon-box {
   display: flex;
   align-items: center;
   padding: 20px;
   background: #09203a;
-  transition: ease-in-out 0.3s;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
-
 
 .interests .icon-box i {
   font-size: 32px;
-  padding-right: 10px;
+  padding-right: 16px;
   line-height: 1;
+  transition: transform 0.3s ease;
 }
 
 .interests .icon-box h3 {
   font-weight: 700;
   margin: 0;
-  padding: 0;
-  line-height: 1;
   font-size: 16px;
   color: #fff;
+  font-family: 'Raleway', sans-serif;
 }
 
+/* HOVER EFEKTİ */
 .interests .icon-box:hover {
-  background: #042b56eb;
+  background: #042b56;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(18, 214, 64, 0.2);
+  border-color: #12D640;
 }
 
+.interests .icon-box:hover i {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .interests .icon-box {
+    padding: 16px;
+    font-size: 15px;
+  }
+  .interests .icon-box i {
+    font-size: 28px;
+    padding-right: 12px;
+  }
+  .interests .icon-box h3 {
+    font-size: 15px;
+  }
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
