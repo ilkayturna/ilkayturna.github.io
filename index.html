@@ -477,48 +477,49 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
 
   <!-- Dil Değiştirme + Typed.js -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const langBtns = document.querySelectorAll(".lang-switcher .lang-btn");
-      let currentLang = "tr";
-      let typedInstance = null;
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const langBtns = document.querySelectorAll(".lang-switcher .lang-btn");
+    let currentLang = "tr";
+    let typedInstance = null;
 
-      function switchLanguage(lang) {
-        currentLang = lang;
+    function switchLanguage(lang) {
+      currentLang = lang;
 
-        // Tüm data-tr / data-en elementlerini güncelle
-        document.querySelectorAll("[data-tr]").forEach(el => {
-          const tr = el.getAttribute("data-tr");
-          const en = el.getAttribute("data-en");
-          el.innerHTML = (lang === "tr" ? tr : en) || tr;
-        });
-
-        // Buton aktiflik
-        langBtns.forEach(btn => btn.classList.toggle("active", btn.dataset.lang === lang));
-
-        // Typed.js yeniden başlat
-        if (typedInstance) typedInstance.destroy();
-        const strings = lang === "tr"
-          ? ["SAP Danışmanı", "Teknoloji Sever", "Hayat Boyu Öğrenci :)"]
-          : ["SAP Consultant", "Tech Enthusiast", "Lifelong Learner :)"];
-        typedInstance = new Typed('.typing', {
-          strings: strings,
-          loop: true,
-          typeSpeed: 65,
-          backSpeed: 65
-        });
-      }
-
-      langBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
-          if (btn.dataset.lang !== currentLang) switchLanguage(btn.dataset.lang);
-        });
+      document.querySelectorAll("[data-tr]").forEach(el => {
+        const tr = el.getAttribute("data-tr");
+        const en = el.getAttribute("data-en");
+        el.innerHTML = (lang === "tr" ? tr : en) || tr;
       });
 
-      // Başlangıç
-      switchLanguage("tr");
+      langBtns.forEach(btn => btn.classList.toggle("active", btn.dataset.lang === lang));
+
+      if (typedInstance) typedInstance.destroy();
+      const strings = lang === "tr"
+        ? ["SAP Danışmanı", "Teknoloji Sever", "Hayat Boyu Öğrenci :)"]
+        : ["SAP Consultant", "Tech Enthusiast", "Lifelong Learner :)"];
+      typedInstance = new Typed('.typing', {
+        strings: strings,
+        loop: true,
+        typeSpeed: 65,
+        backSpeed: 65
+      });
+
+      // MOBİL MENÜYÜ YENİDEN OLUŞTUR
+      if (typeof window.rebuildMobileNavOnLangChange === 'function') {
+        window.rebuildMobileNavOnLangChange();
+      }
+    }
+
+    langBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (btn.dataset.lang !== currentLang) switchLanguage(btn.dataset.lang);
+      });
     });
-  </script>
+
+    switchLanguage("tr");
+  });
+</script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
