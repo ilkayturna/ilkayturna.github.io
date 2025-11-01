@@ -3098,3 +3098,102 @@ body.light-theme #theme-toggle {
     height: 260px !important;
   }
 }
+
+/* ============================================================= */
+/* MOBİL – DİL BUTONU, TEMA BUTONU VE MENÜ BUTONU DÜZENLEMESİ   */
+/* ============================================================= */
+@media (max-width: 768px) {
+
+  /* ---------- 1. Header genel yapı ---------- */
+  #header {
+    position: relative;               /* alt elemanların pozisyonunu kontrol etmek için */
+    padding-top: 70px;                /* üstteki sabit butonlar için boşluk */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  /* ---------- 2. Sabit üst bar (tema + menü) ---------- */
+  #theme-toggle,
+  .mobile-nav-toggle {
+    position: fixed !important;
+    top: 12px !important;
+    z-index: 99999 !important;
+    background: var(--bg-surface) !important;
+    border: 2px solid var(--border) !important;
+    border-radius: 50% !important;
+    width: 44px !important;
+    height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 19px !important;
+    box-shadow: 0 2px 8px var(--shadow) !important;
+    transition: var(--transition) !important;
+  }
+
+  #theme-toggle { right: 12px !important; }
+  .mobile-nav-toggle { right: 68px !important; }   /* tema butonunun solunda */
+
+  /* ---------- 3. Dil değiştirme butonu ---------- */
+  .lang-switcher {
+    position: relative !important;      /* header içinde normal akış */
+    order: 4;                          /* header flex sırasının en sonuna */
+    margin: 20px auto 0 !important;    /* ortala + üst boşluk */
+    width: fit-content !important;
+    z-index: 10 !important;            /* diğer öğelerin üstünde */
+  }
+
+  .lang-switcher .lang-btn {
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+    min-width: 36px !important;
+  }
+
+  /* ---------- 4. Header-top (scroll sonrası sabit üst bar) ---------- */
+  #header.header-top {
+    height: auto !important;
+    padding: 12px 15px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--header-bg) !important;
+    box-shadow: 0 2px 10px var(--shadow);
+  }
+
+  #header.header-top .lang-switcher {
+    order: 3;
+    margin: 0 !important;
+  }
+
+  /* ---------- 5. Mobil menü açıkken butonların görünürlüğü ---------- */
+  .mobile-nav-active #theme-toggle,
+  .mobile-nav-active .mobile-nav-toggle,
+  .mobile-nav-active .lang-switcher {
+    z-index: 99999 !important;
+  }
+
+  /* ---------- 6. Diğer bölümlerde (section) dil butonu ---------- */
+  section .lang-switcher {
+    position: static !important;      /* section içinde normal akış */
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* ---------- 7. Ekstra küçük ekranlar (iPhone SE vb.) ---------- */
+  @media (max-width: 480px) {
+    #theme-toggle,
+    .mobile-nav-toggle {
+      width: 38px !important;
+      height: 38px !important;
+      font-size: 16px !important;
+    }
+    .mobile-nav-toggle { right: 58px !important; }
+    .lang-switcher .lang-btn {
+      padding: 5px 8px !important;
+      font-size: 10px !important;
+    }
+  }
+}
