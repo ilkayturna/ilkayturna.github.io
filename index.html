@@ -28,6 +28,21 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=<?= time(); ?>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=<?= time(); ?>">
+  <!-- Remix Icons (ilgi alanları için) -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<!-- Font Awesome (cogs için) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Boxicons (quick info için) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+      integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -40,6 +55,8 @@
     gtag('js', new Date());
     gtag('config', 'UA-169007209-3');
   </script>
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-toggle">🌙</button>
 </head>
 
 <body>
@@ -82,385 +99,596 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-    <div class="about-me container">
-      <div class="section-title">
-        <h2 data-tr="Hakkımda" data-en="About Me">Hakkımda</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="its me.png" class="img-fluid" alt="İlkay Turna Profil Fotoğrafı">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p data-tr="Teknolojiye duyduğum ilgi, beni sürekli öğrenmeye ve kendimi bu alanda geliştirmeye yönlendirdi. Eğitimim boyunca, bilgi sistemlerinin hem organizasyonlar hem de toplum üzerindeki etkisini daha iyi anlamaya çalıştım. Bu süreçte veri analizi, bilgi güvenliği, yazılım geliştirme ve proje yönetimi gibi konularda kendimi geliştirme fırsatı buldum. Aynı zamanda teknolojinin etik ve sosyal yönleri üzerine düşünmek benim için önemli. Çünkü teknolojiyi sadece bir araç olarak değil, insan yaşamını kolaylaştıran ve topluma değer katabilen bir güç olarak görüyorum. Ekip çalışmasını, fikir alışverişini ve birlikte üretmeyi severim. Yeni şeyler öğrenmek ve farklı bakış açılarıyla gelişmek bana her zaman heyecan verir. Gelecekte, Yönetim Bilişim Sistemleri alanında edindiğim bilgi ve deneyimleri kullanarak hem birlikte çalıştığım insanlara hem de içinde bulunduğum kuruma katkı sağlamayı hedefliyorum."
-             data-en="My passion for technology has driven me to continuously learn and grow in this field. Throughout my education, I have sought to better understand the impact of information systems on both organizations and society. During this process, I had the opportunity to improve myself in areas such as data analysis, information security, software development, and project management. Additionally, reflecting on the ethical and social dimensions of technology is important to me. I see technology not just as a tool, but as a force that simplifies human life and adds value to society. I enjoy teamwork, idea exchange, and collaborative creation. Learning new things and growing through diverse perspectives always excites me. In the future, I aim to contribute to both the people I work with and the organization I am part of by leveraging the knowledge and experience I have gained in Management Information Systems.">
-            Teknolojiye duyduğum ilgi, beni sürekli öğrenmeye ve kendimi bu alanda geliştirmeye yönlendirdi. Eğitimim boyunca, bilgi sistemlerinin hem organizasyonlar hem de toplum üzerindeki etkisini daha iyi anlamaya çalıştım. Bu süreçte veri analizi, bilgi güvenliği, yazılım geliştirme ve proje yönetimi gibi konularda kendimi geliştirme fırsatı buldum. Aynı zamanda teknolojinin etik ve sosyal yönleri üzerine düşünmek benim için önemli. Çünkü teknolojiyi sadece bir araç olarak değil, insan yaşamını kolaylaştıran ve topluma değer katabilen bir güç olarak görüyorum. Ekip çalışmasını, fikir alışverişini ve birlikte üretmeyi severim. Yeni şeyler öğrenmek ve farklı bakış açılarıyla gelişmek bana her zaman heyecan verir. Gelecekte, Yönetim Bilişim Sistemleri alanında edindiğim bilgi ve deneyimleri kullanarak hem birlikte çalıştığım insanlara hem de içinde bulunduğum kuruma katkı sağlamayı hedefliyorum.
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong data-tr="Doğum Tarihi:" data-en="Date of Birth:">Doğum Tarihi:</strong> <span data-tr="29 Ekim 2003" data-en="October 29, 2003">29 Ekim 2003</span></li>
-                <li><i class="icofont-rounded-right"></i> <strong data-tr="Telefon:" data-en="Phone:">Telefon:</strong> +90 534 362 23 75</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong data-tr="Şehir:" data-en="City:">Şehir:</strong> <span data-tr="İstanbul, TR" data-en="Istanbul, TR">İstanbul, TR</span></li>
-                <li><i class="icofont-rounded-right"></i> <strong data-tr="Email:" data-en="Email:">Email:</strong> ilkayt1919@gmail.com</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- İlgi Alanları -->
-    <div class="interests container">
-      <div class="section-title">
-        <h2 data-tr="İlgi Alanları" data-en="Interests">İlgi Alanları</h2>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-4 col-6 mb-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-            <i class="ri-global-line"></i>
-            <h3 data-tr="Web Geliştirme" data-en="Web Development">Web Geliştirme</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mb-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-            <i class="ri-database-2-line"></i>
-            <h3 data-tr="Makine Öğrenmesi" data-en="Machine Learning">Makine Öğrenmesi</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mb-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-            <i class="ri-computer-line"></i>
-            <h3 data-tr="Bilgisayar Bilimleri" data-en="Computer Science">Bilgisayar Bilimleri</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mb-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
-            <i class="ri-english-input"></i>
-            <h3 data-tr="Dil Öğrenimi" data-en="Language Learning">Dil Öğrenimi</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mb-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-            <i class="ri-code-s-slash-fill"></i>
-            <h3 data-tr="Yazılım Geliştirme" data-en="Software Development">Yazılım Geliştirme</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mb-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
-            <i class="ri-bar-chart-box-line"></i>
-            <h3 data-tr="Veri Bilimi" data-en="Data Science">Veri Bilimi</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mb-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-            <i class="ri-file-list-3-line"></i>
-            <h3 data-tr="Algoritmalar" data-en="Algorithms">Algoritmalar</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mb-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="450">
-            <i class="fas fa-cogs"></i>
-            <h3 data-tr="ERP Sistemleri" data-en="ERP Systems">ERP Sistemleri</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- ======= Education Section ======= -->
-<section id="education" class="services">
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
   <div class="container">
-    <div class="section-title">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2 data-tr="Hakkımda" data-en="About Me">Hakkımda</h2>
+    </div>
+
+    <div class="about-corporate row">
+
+      <!-- Profil Kartı -->
+      <div class="col-lg-4,5 profile-wide-card" data-aos="fade-right">
+        <div class="profile-corporate">
+          <div class="profile-photo">
+            <img src="its me.png" alt="İlkay Turna">
+          </div>
+          <div class="profile-header">
+            <h3>İlkay Turna</h3>
+            <p class="role" data-tr="SAP B1 Danışmanı" data-en="SAP B1 Consultant">SAP B1 Danışmanı</p>
+          </div>
+          <div class="profile-details">
+            <p><i class="bx bx-calendar"></i> <span data-tr="29 Ekim 2003" data-en="October 29, 2003">29 Ekim 2003</span></p>
+            <p><i class="bx bx-map"></i> <span data-tr="İstanbul, Türkiye" data-en="Istanbul, Türkiye">İstanbul, Türkiye</span></p>
+            <p><i class="bx bx-phone"></i> +90 534 362 23 75</p>
+            <p><i class="bx bx-envelope"></i> ilkayt1919@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- İçerik -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="about-content">
+
+          <!-- Özlü Tanıtım -->
+          <div class="intro-statement">
+            <blockquote 
+              data-tr="Teknolojiyle işin nasıl daha iyi yapılabileceğini bulmakla ilgileniyorum." 
+              data-en="I’m interested in finding how technology can make work better.">
+              Teknolojiyle işin nasıl daha iyi yapılabileceğini bulmakla ilgileniyorum.
+            </blockquote>
+          </div>
+
+<div class="about-text">
+
+  <p data-tr="Teknolojiyle işin nasıl daha verimli, doğru ve sürdürülebilir hale getirilebileceğini anlamaya çalışıyorum. Sistemleri sadece çalışır kılmak değil, gerçekten işe yarar hale getirmek benim için önemli."
+     data-en="I focus on understanding how technology can make work more efficient, accurate, and sustainable. For me, it’s not just about making systems work — it’s about making them work better.">
+    Teknolojiyle işin nasıl daha verimli, doğru ve sürdürülebilir hale getirilebileceğini anlamaya çalışıyorum. 
+    Sistemleri sadece çalışır kılmak değil, gerçekten işe yarar hale getirmek benim için önemli.
+  </p>
+
+  <p data-tr="Analitik düşünmek, süreçleri sadeleştirmek ve karmaşık yapıları anlamlı hale getirmekten keyif alıyorum. Her yeni proje benim için bir şey inşa etmekten çok, bir yapbozu çözmek gibi."
+     data-en="I enjoy thinking analytically, simplifying processes, and making complex structures meaningful. Every new project feels less like building something — and more like solving a puzzle.">
+    Analitik düşünmek, süreçleri sadeleştirmek ve karmaşık yapıları anlamlı hale getirmekten keyif alıyorum. 
+    Her yeni proje benim için bir şey inşa etmekten çok, bir yapbozu çözmek gibi.
+  </p>
+
+  <p data-tr="Amacım, teknik bilgiyi işin mantığıyla birleştirip gerçekten fark yaratan çözümler üretmek. Basit görünen ama doğru çalışan sistemleri tercih ederim — çünkü en iyi teknoloji, kullanıcıya görünmeyen teknolojidir."
+     data-en="My goal is to combine technical knowledge with business logic to create solutions that actually make a difference. I value systems that look simple but work perfectly — because the best technology is the one you don’t notice.">
+    Amacım, teknik bilgiyi işin mantığıyla birleştirip gerçekten fark yaratan çözümler üretmek. 
+    Basit görünen ama doğru çalışan sistemleri tercih ederim — çünkü en iyi teknoloji, kullanıcıya görünmeyen teknolojidir.
+  </p>
+
+</div>
+          <!-- İlgi Alanları -->
+          <div class="interests-corporate">
+            <div class="interest-badge" data-tr="Web Geliştirme" data-en="Web Development"><i class="ri-global-line"></i> Web Geliştirme</div>
+            <div class="interest-badge" data-tr="Makine Öğrenmesi" data-en="Machine Learning"><i class="ri-database-2-line"></i> Makine Öğrenmesi</div>
+            <div class="interest-badge" data-tr="Bilgisayar Bilimleri" data-en="Computer Science"><i class="ri-computer-line"></i> Bilgisayar Bilimleri</div>
+            <div class="interest-badge" data-tr="Dil Öğrenimi" data-en="Language Learning"><i class="ri-english-input"></i> Dil Öğrenimi</div>
+            <div class="interest-badge" data-tr="Yazılım Geliştirme" data-en="Software Development"><i class="ri-code-s-slash-fill"></i> Yazılım Geliştirme</div>
+            <div class="interest-badge" data-tr="Veri Bilimi" data-en="Data Science"><i class="ri-bar-chart-box-line"></i> Veri Bilimi</div>
+            <div class="interest-badge" data-tr="Algoritmalar" data-en="Algorithms"><i class="ri-file-list-3-line"></i> Algoritmalar</div>
+            <div class="interest-badge" data-tr="ERP Sistemleri" data-en="ERP Systems"><i class="fas fa-cogs"></i> ERP Sistemleri</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ======= Education & Certifications Section ======= -->
+<section id="education" class="education">
+  <div class="container">
+
+    <!-- === EĞİTİM === -->
+    <div class="section-title" data-aos="fade-up">
       <h2 data-tr="Eğitim" data-en="Education">Eğitim</h2>
     </div>
-    <div class="row">
-      <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
-        <div class="custom-item icon-box" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-          <img src="gal2.jpg" class="img-fluid" alt="Güngören Anadolu Lisesi" width="100%" height="300">
-          <p style="text-align:left;color:#fff;padding: 5px 10px;"><em data-tr="Güngören Anadolu Lisesi" data-en="Güngören Anatolian High School">Güngören Anadolu Lisesi</em></p>
-          <h5 style="text-align:left;padding: 0px 10px;" data-tr="Eylül 2017 - Haziran 2021" data-en="September 2017 - June 2021">Eylül 2017 - Haziran 2021</h5>
-          <h6 style="text-align:left;color:#fff;padding: 0px 10px;" data-tr="Eğitim" data-en="Education">Eğitim</h6>
-          <ul style="text-align:left;color:#fff;">
-            <li data-tr="Ekip çalışması, Liderlik," data-en="Teamwork, Leadership,">Ekip çalışması, Liderlik,</li>
-            <li data-tr="Problem çözme, Öz disiplin," data-en="Problem solving, Self-discipline,">Problem çözme, Öz disiplin,</li>
-            <li data-tr="gibi yetkinliklerimi geliştirdim" data-en="I improved my skills in these areas">gibi yetkinliklerimi geliştirdim</li>
-          </ul>
+
+    <div class="education-timeline">
+
+            <!-- Bilgisayar Programcılığı -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="timeline-icon">
+          <i class="bx bxs-terminal"></i>
         </div>
-        <div class="custom-item icon-box" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-          <img src="sauyeni.jpg" class="img-fluid" alt="Yönetim Bilişim Sistemleri" width="100%" height="300">
-          <p style="text-align:left;color:#fff;padding: 5px 10px;"><em data-tr="Yönetim Bilişim Sistemleri" data-en="Management Information Systems">Yönetim Bilişim Sistemleri</em></p>
-          <h5 style="text-align:left;padding: 0px 10px;" data-tr="Eylül 2021 - Haziran 2025" data-en="September 2021 - June 2025">Eylül 2021 - Haziran 2025</h5>
-          <h6 style="text-align:left;color:#fff;padding: 0px 10px;" data-tr="Eğitim" data-en="Education">Eğitim</h6>
-          <ul style="text-align:left;color:#fff;">
-            <li data-tr="MSSQL ve Veritabanı Yönetimi" data-en="MSSQL and Database Management">MSSQL ve Veritabanı Yönetimi</li>
-            <li data-tr="Python Programlama" data-en="Python Programming">Python Programlama</li>
-            <li data-tr="ERP Sistemleri" data-en="ERP Systems">ERP Sistemleri</li>
-          </ul>
+        <div class="timeline-content">
+          <div class="image-wrapper">
+            <img src="Anadoluuni.jpg" alt="Bilgisayar Programcılığı">
+          </div>
+          <div class="details">
+            <h3 data-tr="Bilgisayar Programcılığı" data-en="Computer Programming">Bilgisayar Programcılığı</h3>
+            <span class="date" data-tr="Eylül 2024 – Haziran 2026" data-en="September 2024 – June 2026">Eylül 2024 – Haziran 2026</span>
+            <span class="type" data-tr="Ön Lisans" data-en="Associate Degree">Ön Lisans</span>
+            <ul>
+              <li data-tr="Web ve Mobil Uygulama Geliştirme" data-en="Web and Mobile Application Development">Web ve Mobil Uygulama Geliştirme</li>
+              <li data-tr="Algoritma ve Kodlama Mantığı" data-en="Algorithm and Coding Logic">Algoritma ve Kodlama Mantığı</li>
+              <li data-tr="Siber Güvenlik Temelleri" data-en="Cybersecurity Fundamentals">Siber Güvenlik Temelleri</li>
+            </ul>
+          </div>
         </div>
-        <div class="custom-item icon-box" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-          <img src="Anadoluuni.jpg" class="img-fluid" alt="Bilgisayar Programcılığı" width="100%" height="300">
-          <p style="text-align:left;color:#fff;padding: 5px 10px;"><em data-tr="Bilgisayar Programcılığı" data-en="Computer Programming">Bilgisayar Programcılığı</em></p>
-          <h5 style="text-align:left;padding: 0px 10px;" data-tr="Eylül 2024 - Haziran 2026" data-en="September 2024 - June 2026">Eylül 2024 - Haziran 2026</h5>
-          <h6 style="text-align:left;color:#fff;padding: 0px 10px;" data-tr="Eğitim" data-en="Education">Eğitim</h6>
-          <ul style="text-align:left;color:#fff;">
-            <li data-tr="Web ve Mobil Uygulama Geliştirme" data-en="Web and Mobile App Development">Web ve Mobil Uygulama Geliştirme</li>
-            <li data-tr="Algoritma ve Kodlama Mantığı" data-en="Algorithm and Coding Logic">Algoritma ve Kodlama Mantığı</li>
-            <li data-tr="Siber Güvenlik Temelleri" data-en="Cybersecurity Fundamentals">Siber Güvenlik Temelleri</li>
-          </ul>
+      </div>
+
+      <!-- Yönetim Bilişim Sistemleri -->
+      <div class="timeline-item reverse" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-icon">
+          <i class="fa-solid fa-computer"></i>
         </div>
+        <div class="timeline-content">
+          <div class="image-wrapper">
+            <img src="sauyeni.jpg" alt="Yönetim Bilişim Sistemleri">
+          </div>
+          <div class="details">
+            <h3 data-tr="Yönetim Bilişim Sistemleri" data-en="Management Information Systems">Yönetim Bilişim Sistemleri</h3>
+            <span class="date" data-tr="Eylül 2021 – Haziran 2025" data-en="September 2021 – June 2025">Eylül 2021 – Haziran 2025</span>
+            <span class="type" data-tr="Lisans Eğitimi" data-en="Bachelor's Degree">Lisans Eğitimi</span>
+            <ul>
+              <li data-tr="MSSQL ve Veritabanı Yönetimi" data-en="MSSQL and Database Management">MSSQL ve Veritabanı Yönetimi</li>
+              <li data-tr="Python Programlama" data-en="Python Programming">Python Programlama</li>
+              <li data-tr="ERP Sistemleri ve İş Süreçleri" data-en="ERP Systems and Business Processes">ERP Sistemleri ve İş Süreçleri</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Güngören Anadolu Lisesi -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-icon">
+          <i class="bx bxs-graduation"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="image-wrapper">
+            <img src="gal2.jpg" alt="Güngören Anadolu Lisesi">
+          </div>
+          <div class="details">
+            <h3 data-tr="Güngören Anadolu Lisesi" data-en="Güngören Anatolian High School">Güngören Anadolu Lisesi</h3>
+            <span class="date" data-tr="Eylül 2017 – Haziran 2021" data-en="September 2017 – June 2021">Eylül 2017 – Haziran 2021</span>
+            <span class="type" data-tr="Lise Eğitimi" data-en="High School Education">Lise Eğitimi</span>
+            <ul>
+              <li data-tr="Ekip çalışması ve liderlik becerileri" data-en="Teamwork and Leadership Skills">Ekip çalışması ve liderlik becerileri</li>
+              <li data-tr="Problem çözme ve öz disiplin" data-en="Problem Solving and Self-Discipline">Problem çözme ve öz disiplin</li>
+              <li data-tr="Proje yönetimi ve iletişim" data-en="Project Management and Communication">Proje yönetimi ve iletişim</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- === SERTİFİKALAR === -->
+    <div class="certifications">
+      <div class="section-title" data-aos="fade-up">
+        <h2 data-tr="Sertifikalar" data-en="Certifications">Sertifikalar</h2>
+      </div>
+
+      <div class="row justify-content-center">
+
+        <!-- İlk Yardım -->
+        <div class="col-lg-5 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="cert-card">
+            <div class="cert-badge" data-tr="Sertifikalı" data-en="Certified">Sertifikalı</div>
+            <div class="image-wrapper">
+              <img src="assets/img/certification/ilkyardım.jpg" alt="İlk Yardım">
+            </div>
+            <div class="cert-info">
+              <h4 data-tr="İlk Yardım Eğitimi" data-en="First Aid Training">İlk Yardım Eğitimi</h4>
+              <p data-tr="İstanbul Büyükşehir Belediyesi" data-en="Istanbul Metropolitan Municipality">İstanbul Büyükşehir Belediyesi</p>
+              <a href="https://itfaiye.ibb.gov.tr/m/tr/ilkyardim-egitimleri.html" target="_blank" rel="noopener" class="cert-link">
+                <i class="bx bx-link"></i>
+                <span data-tr="Sertifikayı Görüntüle" data-en="View Certificate">Sertifikayı Görüntüle</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SAP B1 -->
+        <div class="col-lg-5 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="cert-card">
+            <div class="cert-badge" data-tr="Başarı" data-en="Achievement">Başarı</div>
+            <div class="image-wrapper">
+              <img src="sap logo.png" alt="SAP B1">
+            </div>
+            <div class="cert-info">
+              <h4 data-tr="SAP Business One" data-en="SAP Business One">SAP Business One</h4>
+              <p data-tr="Eğitim Programı" data-en="Training Program">Eğitim Programı</p>
+              <a href="https://drive.google.com/file/d/1ovPFEbTJBKFTC2jnpahcPafeFx6MY4S8/view" target="_blank" rel="noopener" class="cert-link">
+                <i class="bx bx-link"></i>
+                <span data-tr="Sertifikayı Görüntüle" data-en="View Certificate">Sertifikayı Görüntüle</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="portfolio">
-      <div class="container">
-        <div class="section-title">
-          <h2 data-tr="Sertifikalar" data-en="Certifications">Sertifikalar</h2>
+  </div>
+</section>
+<!-- ======= Experience Section ======= -->
+<!-- ======= Experience Section ======= -->
+<section id="experience" class="experience">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2 data-tr="Deneyimim" data-en="Experience">Kariyer Yolculuğum</h2>
+    </div>
+
+    <div class="career-roadmap">
+      <!-- Hitsoft - SAP B1 Danışmanı -->
+      <div class="career-stage" data-aos="fade-right" data-aos-delay="100">
+        <div class="stage-icon">
+          <i class="bx bxs-briefcase"></i>
         </div>
-        <div class="row portfolio-container">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/ilkyardım.jpg" class="img-fluid" alt="İlk Yardım Sertifikası">
-              <div class="portfolio-info">
-                <h4 data-tr="İlk Yardım" data-en="First Aid">İlk Yardım</h4>
-                <div class="portfolio-links">
-                  <a href="https://itfaiye.ibb.gov.tr/m/tr/ilkyardim-egitimleri.html" target="_blank" rel="noopener" title="Certificate"><i class="bx bx-link"></i></a>
+        <div class="stage-card">
+          <div class="card-header">
+            <img src="hitsoft-logo.png" alt="Hitsoft" class="company-logo">
+            <div class="role-info">
+              <h3 data-tr="SAP B1 Danışmanı" data-en="SAP B1 Consultant">SAP B1 Danışmanı</h3>
+              <span class="company">Hitsoft</span>
+              <span class="duration" data-tr="Haziran 2025 - Halen" data-en="June 2025 - Present">Haziran 2025 - Halen</span>
+            </div>
+          </div>
+          <div class="achievements">
+            <div class="achievement">
+              <i class="bx bxs-check-circle"></i>
+              <span data-tr="SAP B1 kullanıcı ihtiyaçları için özelleştirme" data-en="Customization for SAP B1 user needs">SAP B1 kullanıcı ihtiyaçları için özelleştirme</span>
+            </div>
+            <div class="achievement">
+              <i class="bx bxs-check-circle"></i>
+              <span data-tr="Stok ve finans süreçlerini optimize ettim" data-en="Optimized stock and finance processes">Stok ve finans süreçlerini optimize ettim</span>
+            </div>
+            <div class="achievement">
+              <i class="bx bxs-check-circle"></i>
+              <span data-tr="SQL raporlama ve Formatted Search uzmanı" data-en="Expert in SQL reporting & Formatted Search">SQL raporlama ve Formatted Search uzmanı</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hitsoft - Stajyer -->
+      <div class="career-stage" data-aos="fade-left" data-aos-delay="200">
+        <div class="stage-icon">
+          <i class="bx bxs-graduation"></i>
+        </div>
+        <div class="stage-card">
+          <div class="card-header">
+            <img src="hitsoft-logo.png" alt="Hitsoft" class="company-logo">
+            <div class="role-info">
+              <h3 data-tr="SAP B1 Danışman Stajyeri" data-en="SAP B1 Consultant Intern">SAP B1 Danışman Stajyeri</h3>
+              <span class="company">Hitsoft</span>
+              <span class="duration" data-tr="Şubat 2025 - Haziran 2025" data-en="February 2025 - June 2025">Şubat 2025 - Haziran 2025</span>
+            </div>
+          </div>
+          <div class="achievements">
+            <div class="achievement">
+              <i class="bx bxs-check-circle"></i>
+              <span data-tr="Formatted Search ve SQL otomasyon" data-en="Formatted Search & SQL automation">Formatted Search ve SQL otomasyon</span>
+            </div>
+            <div class="achievement">
+              <i class="bx bxs-check-circle"></i>
+              <span data-tr="Modül entegrasyonu ve proje yönetimi" data-en="Module integration & project management">Modül entegrasyonu ve proje yönetimi</span>
+            </div>
+            <div class="achievement">
+              <i class="bx bxs-check-circle"></i>
+              <span data-tr="Analiz alma ve kavramsal süreçleri" data-en="Requirements analysis & conceptual processes">Analiz alma ve kavramsal süreçleri</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB Gıda -->
+      <div class="career-stage" data-aos="fade-right" data-aos-delay="300">
+        <div class="stage-icon">
+          <i class="bx bxs-food-menu"></i>
+        </div>
+        <div class="stage-card">
+          <div class="card-header">
+            <img src="tabgida-logo.png" alt="TAB Gıda" class="company-logo">
+            <div class="role-info">
+              <h3 data-tr="Mutfak Şefi" data-en="Kitchen Chef">Mutfak Şefi</h3>
+              <span class="company">TAB Gıda</span>
+              <span class="duration" data-tr="Haziran 2022 - Ekim 2022" data-en="June 2022 - October 2022">Haziran 2022 - Ekim 2022</span>
+            </div>
+          </div>
+          <div class="achievements">
+            <div class="achievement">
+              <i class="bx bxs-check-circle"></i>
+              <span data-tr="15+ personel eğitimi ve operasyon yönetimi" data-en="Trained 15+ staff & managed operations">15+ personel eğitimi ve operasyon yönetimi</span>
+            </div>
+            <div class="achievement">
+              <i class="bx bxs-check-circle"></i>
+              <span data-tr="Gıda güvenliği ve kalite standartları" data-en="Food safety & quality standards">Gıda güvenliği ve kalite standartları</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Turna Elektrik -->
+      <div class="career-stage" data-aos="fade-left" data-aos-delay="400">
+        <div class="stage-icon">
+          <i class="bx bxs-bulb"></i>
+        </div>
+        <div class="stage-card">
+          <div class="card-header">
+            <img src="turna-logo.png" alt="Turna Elektrik" class="company-logo">
+            <div class="role-info">
+              <h3 data-tr="Elektrik Teknisyeni & Dijital Dönüşüm" data-en="Electrical Technician & Digital Transformation">Elektrik Teknisyeni & Dijital Dönüşüm</h3>
+              <span class="company">Turna Elektrik</span>
+              <span class="duration" data-tr="Haziran 2015 - Eylül 2022" data-en="June 2015 - September 2022">Haziran 2015 - Eylül 2022</span>
+            </div>
+          </div>
+          <div class="achievements">
+            <div class="achievement">
+              <i class="bx bxs-check-circle"></i>
+              <span data-tr="İşletme dijitalleştirildi: Web + Sosyal Medya" data-en="Digitalized company: Website + Social Media">İşletme dijitalleştirildi: Web + Sosyal Medya</span>
+            </div>
+            <div class="achievement">
+              <i class="bx bxs-check-circle"></i>
+              <span data-tr="İlk web projem ve teknik altyapı" data-en="My first web project & technical infrastructure">İlk web projem ve teknik altyapı</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Skills Section -->
+<!-- ======= Skills Section ======= -->
+<section id="skills" class="skills">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2 data-tr="Becerilerim" data-en="My Skills">Becerilerim</h2>
+    </div>
+
+    <div class="skills-container">
+
+      <!-- Teknik Beceriler -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+        <div class="category-header">
+          <span class="category-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"/>
+              <path d="M11 7h2v10h-2z"/>
+              <path d="M7 11h10v2H7z"/>
+            </svg>
+          </span>
+          <h3 data-tr="Teknik" data-en="Technical">Teknik</h3>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="150">
+            <div class="skill-card">
+              <div class="skill-front">
+                <div class="skill-icon html">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3h15l-1.4 15.8-6.1 1.7-6.1-1.7L4.5 3z"/></svg>
                 </div>
+              </div>
+              <div class="skill-back">
+                <span data-tr="Python" data-en="Python">Python</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="sap logo.png" class="img-fluid" alt="SAP B1 Başarı Sertifikası">
-              <div class="portfolio-info">
-                <h4 data-tr="SAP B1 Başarı Sertifikası" data-en="SAP B1 Success Certificate">SAP B1 Başarı Sertifikası</h4>
-                <div class="portfolio-links">
-                  <a href="https://drive.google.com/file/d/1ovPFEbTJBKFTC2jnpahcPafeFx6MY4S8/view" target="_blank" rel="noopener" title="Certificate"><i class="bx bx-link"></i></a>
+
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+            <div class="skill-card">
+              <div class="skill-front">
+                <div class="skill-icon css">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3h15l-1.4 15.8-6.1 1.7-6.1-1.7L4.5 3z"/></svg>
                 </div>
               </div>
+              <div class="skill-back">
+                <span data-tr="MS Office" data-en="MS Office">MS Office</span>
+              </div>
             </div>
+          </div>
+
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="250">
+            <div class="skill-card">
+              <div class="skill-front">
+                <div class="skill-icon js">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3V3z"/></svg>
+                </div>
+              </div>
+              <div class="skill-back">
+                <span data-tr="ERP" data-en="ERP">ERP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+            <div class="skill-card">
+              <div class="skill-front">
+                <div class="skill-icon bootstrap">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.5 3h-15c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                </div>
+              </div>
+              <div class="skill-back">
+                <span data-tr="SQL / HANA DB" data-en="SQL / HANA DB">SQL / HANA DB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="350">
+            <div class="skill-card">
+              <div class="skill-front">
+                <div class="skill-icon git">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="1.5"/><circle cx="16" cy="12" r="1.5"/><circle cx="8" cy="12" r="1.5"/></svg>
+                </div>
+              </div>
+              <div class="skill-back">
+                <span data-tr="Git & GitHub" data-en="Git & GitHub">Git & GitHub</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Kişisel Beceriler -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+        <div class="category-header">
+          <span class="category-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          </span>
+          <h3 data-tr="Kişisel" data-en="Personal">Kişisel</h3>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="550">
+            <div class="skill-card">
+              <div class="skill-front">
+                <div class="skill-icon teamwork">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12c1.65 0 3-1.35 3-3s-1.35-3-3-3-3 1.35-3 3 1.35 3 3 3z"/></svg>
+                </div>
+              </div>
+              <div class="skill-back">
+                <span data-tr="Takım Çalışması" data-en="Teamwork">Takım Çalışması</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">
+            <div class="skill-card">
+              <div class="skill-front">
+                <div class="skill-icon problem">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14z"/></svg>
+                </div>
+              </div>
+              <div class="skill-back">
+                <span data-tr="Problem Çözme" data-en="Problem Solving">Problem Çözme</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="650">
+            <div class="skill-card">
+              <div class="skill-front">
+                <div class="skill-icon communication">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4z"/></svg>
+                </div>
+              </div>
+              <div class="skill-back">
+                <span data-tr="İletişim" data-en="Communication">İletişim</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="700">
+            <div class="skill-card">
+              <div class="skill-front">
+                <div class="skill-icon time">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2z"/></svg>
+                </div>
+              </div>
+              <div class="skill-back">
+                <span data-tr="Zaman Yönetimi" data-en="Time Management">Zaman Yönetimi</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Skills Section -->
+
+<!-- Contact Section -->
+<section id="contacts" class="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2 data-tr="İletişim" data-en="Contact">İletişim</h2>
+    </div>
+
+    <div class="row contact-grid">
+      <!-- Adres -->
+      <div class="col-md-6 contact-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+          </div>
+          <div class="contact-content">
+            <h3 data-tr="Adres" data-en="Address">Adres</h3>
+            <p>Bağcılar/İstanbul, Türkiye</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sosyal Medya -->
+      <div class="col-md-6 contact-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.1h-2.79v8.37h2.79v-4.93c0-1.3.68-2.58 2.13-2.58s2.13 1.28 2.13 2.58v4.93h2.79zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.68-1.68-1.68s-1.68.75-1.68 1.68.75 1.68 1.68 1.68zm1.39 9.81v-8.37H5.5v8.37h2.77z"/>
+            </svg>
+          </div>
+          <div class="contact-content">
+            <h3 data-tr="Sosyal Profiller" data-en="Social Profiles">Sosyal Profiller</h3>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/ilkay-t-ba3aa6237" target="_blank" rel="noopener" class="linkedin" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.1h-2.79v8.37h2.79v-4.93c0-1.3.68-2.58 2.13-2.58s2.13 1.28 2.13 2.58v4.93h2.79zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.68-1.68-1.68s-1.68.75-1.68 1.68.75 1.68 1.68 1.68zm1.39 9.81v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/ilkayturna" target="_blank" rel="noopener" class="github" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386C24 5.373 18.627 0 12 0z"/>
+                </svg>
+              </a>
+              <a href="mailto:ilkayt1919@gmail.com" class="google" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-6 contact-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </div>
+          <div class="contact-content">
+            <h3 data-tr="Email" data-en="Email">Email</h3>
+            <p><a href="mailto:ilkayt1919@gmail.com">ilkayt1919@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Telefon -->
+      <div class="col-md-6 contact-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+          </div>
+          <div class="contact-content">
+            <h3 data-tr="Telefon Numarası" data-en="Phone Number">Telefon Numarası</h3>
+            <p><a href="tel:+905343622375">+90 534 362 23 75</a></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-tr="Deneyim" data-en="Experience">Deneyim</h2>
-      </div>
-      <div class="row">
-
-        <!-- Hitsoft - SAP B1 Danışmanı -->
-        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <h4 style="text-align:left;">
-            <a href="https://www.hitsoft.com.tr/" style="color:#12d640" target="_blank" rel="noopener">Hitsoft</a>
-          </h4>
-          <h5 style="text-align:left;" data-tr="Haziran 2025 - Halen" data-en="June 2025 - Present">Haziran 2025 - Halen</h5>
-          <p style="text-align:left;color:#fff"><em data-tr="SAP B1 Danışmanı" data-en="SAP B1 Consultant">SAP B1 Danışmanı</em></p>
-          <ul style="text-align:left;">
-            <li data-tr="SAP Business One üzerinde kullanıcı ihtiyaçlarına yönelik geliştirmeler, sorgular ve uyarlamalar gerçekleştirdim."
-                data-en="Developed customizations, queries, and adaptations on SAP Business One based on user needs.">
-              SAP Business One üzerinde kullanıcı ihtiyaçlarına yönelik geliştirmeler, sorgular ve uyarlamalar gerçekleştirdim.
-            </li>
-            <li data-tr="Satınalma, satış, stok ve finans modüllerinde süreç analizleri yaparak sistem verimliliğini artırmaya yönelik çözümler geliştirdim."
-                data-en="Conducted process analyses in purchasing, sales, inventory, and finance modules to develop solutions that improve system efficiency.">
-              Satınalma, satış, stok ve finans modüllerinde süreç analizleri yaparak sistem verimliliğini artırmaya yönelik çözümler geliştirdim.
-            </li>
-            <li data-tr="Veritabanı yönetimi, Formatted Search, kullanıcı tanımlı alanlar (UDF) ve SQL tabanlı raporlama konularında aktif rol aldım."
-                data-en="Actively involved in database management, Formatted Search, user-defined fields (UDF), and SQL-based reporting.">
-              Veritabanı yönetimi, Formatted Search, kullanıcı tanımlı alanlar (UDF) ve SQL tabanlı raporlama konularında aktif rol aldım.
-            </li>
-            <li data-tr="Müşteri süreçlerine özel eğitimler ve dokümantasyonlar hazırlayarak kullanıcıların sisteme adaptasyonuna katkı sağladım."
-                data-en="Prepared training and documentation tailored to customer processes to facilitate user adaptation to the system.">
-              Müşteri süreçlerine özel eğitimler ve dokümantasyonlar hazırlayarak kullanıcıların sisteme adaptasyonuna katkı sağladım.
-            </li>
-          </ul>
-        </div>
-
-        <!-- Hitsoft - Stajyer -->
-        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <h4 style="text-align:left;">
-            <a href="https://www.hitsoft.com.tr/" style="color:#12d640" target="_blank" rel="noopener">Hitsoft</a>
-          </h4>
-          <h5 style="text-align:left;" data-tr="Şubat 2025 - Haziran 2025" data-en="February 2025 - June 2025">Şubat 2025 - Haziran 2025</h5>
-          <p style="text-align:left;color:#fff"><em data-tr="SAP B1 Danışman Stajyeri" data-en="SAP B1 Consultant Intern">SAP B1 Danışman Stajyeri</em></p>
-          <ul style="text-align:left;">
-            <li data-tr="SAP Business One sisteminde kullanıcı taleplerine yönelik özelleştirmeler ve Formatted Search uygulamaları geliştirdim."
-                data-en="Developed customizations and Formatted Search applications in SAP Business One based on user requests.">
-              SAP Business One sisteminde kullanıcı taleplerine yönelik özelleştirmeler ve Formatted Search uygulamaları geliştirdim.
-            </li>
-            <li data-tr="Veritabanı sorguları (SQL) yazarak raporlama ve iş süreçlerinin otomasyonuna katkı sağladım."
-                data-en="Wrote SQL queries to contribute to reporting and automation of business processes.">
-              Veritabanı sorguları (SQL) yazarak raporlama ve iş süreçlerinin otomasyonuna katkı sağladım.
-            </li>
-            <li data-tr="SAP B1 modüllerinin işleyişi, entegrasyon süreçleri ve proje yönetimi aşamaları hakkında pratik deneyim kazandım."
-                data-en="Gained practical experience in SAP B1 module operations, integration processes, and project management phases.">
-              SAP B1 modüllerinin işleyişi, entegrasyon süreçleri ve proje yönetimi aşamaları hakkında pratik deneyim kazandım.
-            </li>
-            <li data-tr="Ekip içinde aktif iletişim kurarak müşteri ihtiyaçlarını analiz ettim ve çözüm önerileri sundum."
-                data-en="Actively communicated within the team to analyze customer needs and propose solutions.">
-              Ekip içinde aktif iletişim kurarak müşteri ihtiyaçlarını analiz ettim ve çözüm önerileri sundum.
-            </li>
-          </ul>
-        </div>
-
-        <!-- TAB Gıda -->
-        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <h4 style="text-align:left;">
-            <a href="https://www.tabgida.com.tr/" style="color:#12d640" target="_blank" rel="noopener">TAB Gıda</a>
-          </h4>
-          <h5 style="text-align:left;" data-tr="Haziran 2022 - Ekim 2022" data-en="June 2022 - October 2022">Haziran 2022 - Ekim 2022</h5>
-          <p style="text-align:left;color:#fff"><em data-tr="Mutfak Şefi" data-en="Kitchen Chef">Mutfak Şefi</em></p>
-          <ul style="text-align:left;">
-            <li data-tr="Türkiye’nin en büyük hızlı servis restoran zincirlerinden biri olan TAB Gıda'da mutfak şefi olarak görev yaptım."
-                data-en="Worked as a kitchen chef at TAB Gıda, one of Turkey's largest fast-food restaurant chains.">
-              Türkiye’nin en büyük hızlı servis restoran zincirlerinden biri olan TAB Gıda'da mutfak şefi olarak görev yaptım.
-            </li>
-            <li data-tr="Mutfak personelini eğittim, yönettim ve iş akışını organize ettim."
-                data-en="Trained, managed kitchen staff, and organized workflow.">
-              Mutfak personelini eğittim, yönettim ve iş akışını organize ettim.
-            </li>
-            <li data-tr="Hijyen, kalite kontrol ve gıda güvenliği standartlarının eksiksiz uygulanmasını sağladım."
-                data-en="Ensured full compliance with hygiene, quality control, and food safety standards.">
-              Hijyen, kalite kontrol ve gıda güvenliği standartlarının eksiksiz uygulanmasını sağladım.
-            </li>
-            <li data-tr="Yoğun çalışma temposunda operasyon verimliliğini artırmak için süreç iyileştirmeleri gerçekleştirdim."
-                data-en="Implemented process improvements to increase operational efficiency in a high-paced environment.">
-              Yoğun çalışma temposunda operasyon verimliliğini artırmak için süreç iyileştirmeleri gerçekleştirdim.
-            </li>
-          </ul>
-        </div>
-
-        <!-- Turna Elektrik -->
-        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <h4 style="text-align:left;">
-            <a href="https://turnaelektrik.cloud/" style="color:#12d640" target="_blank" rel="noopener">Turna Elektrik</a>
-          </h4>
-          <h5 style="text-align:left;" data-tr="Haziran 2015 - Eylül 2022" data-en="June 2015 - September 2022">Haziran 2015 - Eylül 2022</h5>
-          <p style="text-align:left;color:#fff"><em data-tr="Elektrik Teknisyeni" data-en="Electrical Technician">Elektrik Teknisyeni</em></p>
-          <ul style="text-align:left;">
-            <li data-tr="Bir küçük aile dükkanımız olan Turna Elektrik'te 2015'ten beri işi ve iş hayatını öğrenmek için çalıştım."
-                data-en="Worked at Turna Elektrik, our small family business, since 2015 to learn business and work life.">
-              Bir küçük aile dükkanımız olan Turna Elektrik'te 2015'ten beri işi ve iş hayatını öğrenmek için çalıştım.
-            </li>
-            <li data-tr="Okul hayatımla birlikte devam ettirdiğim bu süreçte kendimi geliştirmeye ve elektriğin mekanik ve teknik alanlarında düzen ve işleyişini öğrendim."
-                data-en="During this period alongside my education, I improved myself and learned the mechanical and technical operations of electricity.">
-              Okul hayatımla birlikte devam ettirdiğim bu süreçte kendimi geliştirmeye ve elektriğin mekanik ve teknik alanlarında düzen ve işleyişini öğrendim.
-            </li>
-            <li data-tr="Ardından bilişim sistemlerine olan merakımdan dolayı bu küçük işletmemizi dijitale taşıyarak kurumsal hayata ilk adımını attırmış oldum."
-                data-en="Later, due to my interest in information systems, I digitized our small business, taking its first step into corporate life.">
-              Ardından bilişim sistemlerine olan merakımdan dolayı bu küçük işletmemizi dijitale taşıyarak kurumsal hayata ilk adımını attırmış oldum.
-            </li>
-            <li data-tr="İşletmeyi önce sosyal ağlara taşıdım. Ardından bir websitesi kurarak dijital olarak varlığını oluşturdum."
-                data-en="First, I brought the business to social media. Then, I created a website to establish its digital presence.">
-              İşletmeyi önce sosyal ağlara taşıdım. Ardından bir websitesi kurarak dijital olarak varlığını oluşturdum.
-            </li>
-            <li data-tr="Tüm bunları yaparken bir çok becerimi geliştirdim ve Web alanında ilk projemi geliştirmenin heyecan ve mutluluğunu yaşadım :)."
-                data-en="While doing all this, I developed many skills and experienced the excitement and joy of building my first web project :).">
-              Tüm bunları yaparken bir çok becerimi geliştirdim ve Web alanında ilk projemi geliştirmenin heyecan ve mutluluğunu yaşadım :).
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End Experience Section -->
-
-  <!-- Start Skills Section -->
-  <section id="skills" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-tr="Beceriler" data-en="Skills">Beceriler</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-
-          <!-- Languages and Databases -->
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a" data-tr="Diller ve Veritabanları" data-en="Languages and Databases">Diller ve Veritabanları</h4>
-            <p style="text-align:left;">
-              <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" height="50" width="150">
-              <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" height="60" width="90">
-              <img src="assets/img/project/mssql.jpg" alt="MSSQL" height="70" width="130">
-              <img src="hana logo.jpeg" alt="SAP HANA" height="70" width="130">
-            </p>
-          </div>
-
-          <!-- Tools -->
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a" data-tr="Araçlar" data-en="Tools">Araçlar</h4>
-            <p style="text-align:left;">
-              <img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="GitHub" height="50" width="80">
-              <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="AWS" height="50" width="100">
-              <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter" height="50" width="100">
-              <img src="assets/img/project/harmony.jpg" alt="Harmony ERP" height="80" width="100">
-              <img src="sap logo.png" alt="SAP" height="80" width="100">
-              <img src="https://www.vectorlogo.zone/logos/wordpress/wordpress-ar21.svg" alt="WordPress" height="50" width="100">
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Skills Section -->
-
-  <!-- Contact Section -->
-  <section id="contacts" class="contact">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-tr="İletişim" data-en="Contact">İletişim</h2>
-      </div>
-      <div class="row mt-2">
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3 data-tr="Adres" data-en="Address">Adres</h3>
-            <p>Turkiye</p>
-            <p>İstanbul</p>
-            <p>34200</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3 data-tr="Sosyal Profiller" data-en="Social Profiles">Sosyal Profiller</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/ilkay-t-ba3aa6237" target="_blank" rel="noopener" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://www.github.com/ilkayturna" target="_blank" rel="noopener" class="github"><i class="bx bxl-github"></i></a>
-              <a href="mailto:ilkayt1919@gmail.com" class="google"><i class="bx bxl-google"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3 data-tr="Email" data-en="Email">Email</h3>
-            <p>ilkayt1919@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3 data-tr="Telefon Numarası" data-en="Phone Number">Telefon Numarası</h3>
-            <p>+905343622375</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -518,7 +746,42 @@
   });
 </script>
 
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const themeToggle = document.getElementById('theme-toggle');
+    const moonIcon = themeToggle.querySelector('.icon-moon');
+    const sunIcon = themeToggle.querySelector('.icon-sun');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function applyTheme(isLight) {
+      document.body.classList.toggle('light-theme', isLight);
+      moonIcon.style.display = isLight ? 'none' : 'block';
+      sunIcon.style.display = isLight ? 'block' : 'none';
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    }
+
+    function loadTheme() {
+      const saved = localStorage.getItem('theme');
+      if (saved) {
+        applyTheme(saved === 'light');
+      } else {
+        applyTheme(!prefersDark.matches);
+      }
+    }
+
+    themeToggle.addEventListener('click', function () {
+      const isLight = !document.body.classList.contains('light-theme');
+      applyTheme(isLight);
+    });
+
+    loadTheme();
+    prefersDark.addListener(() => loadTheme());
+  });
+</script>
+
 </body>
 </html>
