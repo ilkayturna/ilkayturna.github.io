@@ -73,6 +73,14 @@
         if (hash == '#header') {
           $('#header').removeClass('header-top');
           $("section").removeClass('section-show');
+          
+          // MOBİL MENÜYÜ KAPAT (HOME İÇİN DE)
+          if ($('body').hasClass('mobile-nav-active')) {
+            $('body').removeClass('mobile-nav-active');
+            $mobile_toggle.find('i').removeClass('icofont-close').addClass('icofont-navigation-menu');
+            $('.mobile-nav-overly').fadeOut();
+          }
+          
           return;
         }
 
@@ -90,7 +98,7 @@
         // Mobil menüyü kapat
         if ($('body').hasClass('mobile-nav-active')) {
           $('body').removeClass('mobile-nav-active');
-          $mobile_toggle.find('i').toggleClass('icofont-navigation-menu icofont-close');
+          $mobile_toggle.find('i').removeClass('icofont-close').addClass('icofont-navigation-menu');
           $('.mobile-nav-overly').fadeOut();
         }
 

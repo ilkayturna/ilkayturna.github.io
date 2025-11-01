@@ -783,5 +783,30 @@
   });
 </script>
 
+</script>
+// Mobil menüye dil değiştirici ekle
+function addMobileLangSwitcher() {
+  if (window.innerWidth <= 768) {
+    const mobileNav = document.querySelector('.mobile-nav');
+    if (mobileNav && !document.querySelector('.mobile-nav-lang')) {
+      const langSwitcher = document.createElement('div');
+      langSwitcher.className = 'mobile-nav-lang';
+      langSwitcher.innerHTML = `
+        <button class="lang-btn ${currentLang === 'tr' ? 'active' : ''}" onclick="changeLanguage('tr')">TR</button>
+        <span class="divider">|</span>
+        <button class="lang-btn ${currentLang === 'en' ? 'active' : ''}" onclick="changeLanguage('en')">EN</button>
+      `;
+      mobileNav.insertBefore(langSwitcher, mobileNav.firstChild);
+    }
+  }
+}
+
+// Sayfa yüklendiğinde ve menü açıldığında çalıştır
+document.addEventListener('DOMContentLoaded', addMobileLangSwitcher);
+document.querySelector('.mobile-nav-toggle')?.addEventListener('click', () => {
+  setTimeout(addMobileLangSwitcher, 100);
+});
+</script>
+
 </body>
 </html>

@@ -2795,405 +2795,483 @@ body.light-theme #theme-toggle {
   }
 }
 
-
-
 /* ============================= */
-/* MOBİL DÜZENLEMELER - SORUNSUZ & TEMİZ */
+/* MOBİL DÜZENLEME - BASIT & ÇALIŞIR HAL */
 /* ============================= */
+
 @media (max-width: 768px) {
-  /* --- Genel --- */
-  body {
-    overflow-x: hidden;
-  }
-
-  /* --- Header & Üst Alan --- */
-  #header {
-    height: auto;
-    min-height: 100vh;
-    padding: 80px 20px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-  }
-
-  #header .container {
-    width: 100%;
-    max-width: none;
-    padding: 0;
-  }
-
-  #header h1 {
-    font-size: 36px !important;
-    margin-bottom: 12px;
-  }
-
-  #header h2 {
-    font-size: 18px !important;
-    margin-top: 12px;
-  }
-
-  #header .social-links {
-    margin-top: 24px;
-    justify-content: center;
-  }
-
-  #header .social-links a {
-    width: 36px;
-    height: 36px;
-    font-size: 15px;
-  }
-
-  /* --- Dil Butonu --- */
-  .lang-switcher {
-    position: relative;
-    margin: 16px auto 0 !important;
-    justify-content: center;
-    order: 3;
-    width: 100%;
-    max-width: 180px;
-  }
-
-  .lang-switcher .lang-btn {
-    padding: 6px 10px !important;
-    font-size: 11px !important;
-    min-width: 36px !important;
-  }
-
-  /* --- Tema Butonu --- */
+  
+  /* === ÜST SAĞ KÖŞE - 3 BUTON YAN YANA === */
+  
+  /* Tema butonu - en sağda */
   #theme-toggle {
-    top: 12px !important;
-    right: 12px !important;
-    width: 42px !important;
-    height: 42px !important;
-    font-size: 18px !important;
-    z-index: 99999 !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
-  }
-
-  /* --- Mobil Menü Toggle --- */
-  .mobile-nav-toggle {
-    top: 12px !important;
-    right: 68px !important;
-    width: 42px;
-    height: 42px;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    backdrop-filter: blur(6px);
-  }
-
-  /* Mobil menü açıldığında tema ve dil butonlarını koru */
-  .mobile-nav-active #theme-toggle,
-  .mobile-nav-active .lang-switcher {
-    z-index: 99999 !important;
-  }
-
-  /* --- Navigasyon Menüsü --- */
-  .nav-menu {
-    margin-top: 24px !important;
-    order: 2;
-  }
-
-  .nav-menu ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .nav-menu li + li {
-    margin-left: 0 !important;
-  }
-
-  .nav-menu a {
-    font-size: 17px !important;
-    padding: 8px 0;
-  }
-
-  /* --- Bölümler --- */
-  section {
-    top: 100px !important;
-    padding: 0 15px !important;
-  }
-
-  section.section-show {
-    top: 60px !important;
-  }
-
-  .section-title h2 {
-    font-size: 13px !important;
-  }
-
-  .section-title p {
-    font-size: 28px !important;
-  }
-
-  /* --- Hakkımda --- */
-  .about-corporate {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .profile-corporate {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .profile-photo {
-    height: 300px !important;
-  }
-
-  .profile-header h3 {
-    font-size: 1.5rem !important;
-  }
-
-  .profile-header .role {
-    font-size: 1rem !important;
-  }
-
-  /* --- Beceriler --- */
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 18px !important;
-  }
-
-  .skill-card {
-    height: 130px !important;
-  }
-
-  .skill-icon {
-    width: 60px !important;
-    height: 60px !important;
-  }
-
-  .skill-icon svg {
-    width: 32px !important;
-    height: 32px !important;
-  }
-
-  /* --- Deneyim & Eğitim --- */
-  .career-roadmap::before,
-  .education-timeline::before {
-    left: 30px !important;
-  }
-
-  .career-stage,
-  .career-stage:nth-child(even),
-  .timeline-item,
-  .timeline-item.reverse {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-  }
-
-  .stage-icon,
-  .timeline-icon {
-    margin-bottom: -30px !important;
-    left: 30px !important;
-    transform: translateX(-50%) !important;
-  }
-
-  .stage-card,
-  .timeline-content {
-    margin-left: 70px !important;
-    margin-right: 0 !important;
-    width: calc(100% - 80px) !important;
-  }
-
-  .timeline-content .image-wrapper {
-    height: 120px !important;
-  }
-
-  /* --- İletişim --- */
-  .contact .contact-grid {
-    grid-template-columns: 1fr !important;
-    gap: 24px !important;
-    padding: 0 10px !important;
-  }
-
-  .contact .contact-item {
-    padding: 28px 20px !important;
-    min-height: 200px !important;
-  }
-
-  .contact .contact-icon {
-    width: 60px !important;
-    height: 60px !important;
-  }
-
-  .contact .contact-icon svg {
-    width: 30px !important;
-    height: 30px !important;
-  }
-
-  .contact .social-links {
-    gap: 12px !important;
-  }
-
-  .contact .social-links a {
+    position: fixed !important;
+    top: 15px !important;
+    right: 15px !important;
     width: 44px !important;
     height: 44px !important;
+    z-index: 99999 !important;
   }
-
-  /* --- Portföy --- */
-  .portfolio-container,
-  .portfolio-item {
-    flex: 1 1 100% !important;
+  
+  #theme-toggle svg {
+    width: 20px !important;
+    height: 20px !important;
   }
-
-  /* --- Genel Kartlar --- */
-  .custom-item,
-  .col-lg-4,
-  .icon-box,
-  .services .icon-box,
-  .interests .icon-box {
-    width: 100% !important;
-    margin: 10px 0 !important;
-  }
-
-  /* --- Scrollbar --- */
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
-}
-
-/* Ekstra Küçük Ekranlar (iPhone SE, vs.) */
-@media (max-width: 480px) {
-  #header h1 {
-    font-size: 32px !important;
-  }
-
-  #header h2 {
-    font-size: 16px !important;
-  }
-
-  .lang-switcher {
-    max-width: 160px;
-  }
-
-  .lang-switcher .lang-btn {
-    padding: 5px 8px !important;
-    font-size: 10px !important;
-  }
-
-  #theme-toggle,
-  .mobile-nav-toggle {
-    width: 38px !important;
-    height: 38px !important;
-    font-size: 16px !important;
-  }
-
-  .mobile-nav-toggle {
-    right: 60px !important;
-  }
-
-  .section-title p {
-    font-size: 24px !important;
-  }
-
-  .profile-photo {
-    height: 260px !important;
-  }
-}
-
-/* ============================================================= */
-/* MOBİL – DİL BUTONU, TEMA BUTONU VE MENÜ BUTONU DÜZENLEMESİ   */
-/* ============================================================= */
-@media (max-width: 768px) {
-
-  /* ---------- 1. Header genel yapı ---------- */
-  #header {
-    position: relative;               /* alt elemanların pozisyonunu kontrol etmek için */
-    padding-top: 70px;                /* üstteki sabit butonlar için boşluk */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  /* ---------- 2. Sabit üst bar (tema + menü) ---------- */
-  #theme-toggle,
+  
+  /* Mobil menü toggle (hamburger) - ortada */
   .mobile-nav-toggle {
     position: fixed !important;
-    top: 12px !important;
-    z-index: 99999 !important;
-    background: var(--bg-surface) !important;
-    border: 2px solid var(--border) !important;
-    border-radius: 50% !important;
+    right: 70px !important;
+    top: 15px !important;
+    z-index: 99998 !important;
     width: 44px !important;
     height: 44px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    font-size: 19px !important;
-    box-shadow: 0 2px 8px var(--shadow) !important;
-    transition: var(--transition) !important;
+    background: var(--bg-surface) !important;
+    border: 2px solid var(--border) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 12px var(--shadow) !important;
   }
-
-  #theme-toggle { right: 12px !important; }
-  .mobile-nav-toggle { right: 68px !important; }   /* tema butonunun solunda */
-
-  /* ---------- 3. Dil değiştirme butonu ---------- */
+  
+  .mobile-nav-toggle i {
+    font-size: 20px !important;
+  }
+  
+  /* Dil butonu - en solda (mobil için özel konum) */
   .lang-switcher {
-    position: relative !important;      /* header içinde normal akış */
-    order: 4;                          /* header flex sırasının en sonuna */
-    margin: 20px auto 0 !important;    /* ortala + üst boşluk */
-    width: fit-content !important;
-    z-index: 10 !important;            /* diğer öğelerin üstünde */
-  }
-
-  .lang-switcher .lang-btn {
-    padding: 6px 10px !important;
-    font-size: 11px !important;
-    min-width: 36px !important;
-  }
-
-  /* ---------- 4. Header-top (scroll sonrası sabit üst bar) ---------- */
-  #header.header-top {
-    height: auto !important;
-    padding: 12px 15px !important;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--header-bg) !important;
-    box-shadow: 0 2px 10px var(--shadow);
-  }
-
-  #header.header-top .lang-switcher {
-    order: 3;
+    position: fixed !important;
+    top: 15px !important;
+    right: 125px !important;
+    z-index: 99997 !important;
     margin: 0 !important;
+    background: var(--bg-surface) !important;
+    padding: 8px 10px !important;
+    border-radius: 25px !important;
+    border: 2px solid var(--border) !important;
+    box-shadow: 0 4px 12px var(--shadow) !important;
   }
-
-  /* ---------- 5. Mobil menü açıkken butonların görünürlüğü ---------- */
-  .mobile-nav-active #theme-toggle,
-  .mobile-nav-active .mobile-nav-toggle,
-  .mobile-nav-active .lang-switcher {
-    z-index: 99999 !important;
+  
+  .lang-switcher .lang-btn {
+    padding: 6px 12px !important;
+    font-size: 11px !important;
+    min-width: 34px !important;
+    border-width: 1.5px !important;
   }
-
-  /* ---------- 6. Diğer bölümlerde (section) dil butonu ---------- */
-  section .lang-switcher {
-    position: static !important;      /* section içinde normal akış */
-    margin-top: 20px !important;
-    margin-bottom: 10px !important;
+  
+  .lang-switcher .divider {
+    font-size: 12px !important;
+    margin: 0 2px !important;
   }
+  
+  /* === HEADER DÜZENİ === */
+  
+  #header {
+    padding: 15px 20px !important;
+  }
+  
+  #header h1 {
+    font-size: 22px !important;
+    margin-top: 8px !important;
+    padding-right: 0 !important;
+  }
+  
+  #header h2 {
+    font-size: 15px !important;
+    margin-top: 10px !important;
+  }
+  
+  #header .social-links {
+    margin-top: 18px !important;
+    flex-wrap: wrap !important;
+  }
+  
+  #header .social-links a {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 14px !important;
+    margin-right: 6px !important;
+  }
+  
+  /* === MOBİL MENÜ === */
+  
+  .mobile-nav {
+    top: 75px !important;
+    right: 12px !important;
+    left: 12px !important;
+    bottom: 12px !important;
+    padding: 20px 0 !important;
+  }
+  
+  .mobile-nav a {
+    padding: 15px 24px !important;
+    font-size: 16px !important;
+  }
+  
+  /* === SECTION === */
+  
+  section {
+    top: 100px !important;
+  }
+  
+  section.section-show {
+    top: 75px !important;
+  }
+  
+  section .container {
+    padding: 20px 15px !important;
+  }
+  
+  /* === KARTLAR === */
+  
+  .icon-box,
+  .services .icon-box,
+  .interests .icon-box {
+    padding: 18px !important;
+    margin-bottom: 18px !important;
+  }
+  
+  .icon-box h3 {
+    font-size: 15px !important;
+  }
+  
+  .icon-box i {
+    font-size: 26px !important;
+    padding-right: 12px !important;
+  }
+  
+  /* === BECERİLER === */
+  
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 16px !important;
+  }
+  
+  .skill-card {
+    height: 130px !important;
+  }
+  
+  .skill-icon {
+    width: 65px !important;
+    height: 65px !important;
+  }
+  
+  .skill-icon svg {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  
+  /* === İLETİŞİM === */
+  
+  .contact .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding: 0 10px !important;
+  }
+  
+  .contact .contact-item {
+    padding: 26px 20px !important;
+    min-height: 190px !important;
+  }
+  
+  .contact .contact-icon {
+    width: 58px !important;
+    height: 58px !important;
+  }
+  
+  .contact .contact-icon svg {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  
+  .contact .contact-content h3 {
+    font-size: 1.12rem !important;
+  }
+  
+  .contact .contact-content p,
+  .contact .contact-content a {
+    font-size: 0.94rem !important;
+  }
+  
+  .contact .social-links {
+    gap: 10px !important;
+    padding-top: 16px !important;
+  }
+  
+  .contact .social-links a {
+    width: 42px !important;
+    height: 42px !important;
+  }
+  
+  .contact .social-links svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  
+  /* === DENEYİM === */
+  
+  .career-roadmap::before {
+    left: 25px !important;
+  }
+  
+  .career-stage,
+  .career-stage:nth-child(even) {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+  .stage-icon {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 1.4rem !important;
+    margin-bottom: -25px !important;
+    z-index: 2 !important;
+  }
+  
+  .stage-card,
+  .career-stage:nth-child(even) .stage-card {
+    margin-left: 65px !important;
+    margin-right: 10px !important;
+    width: calc(100% - 75px) !important;
+    padding: 20px !important;
+  }
+  
+  .role-info h3 {
+    font-size: 1.18rem !important;
+  }
+  
+  .company-logo {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  
+  .achievement {
+    font-size: 0.88rem !important;
+  }
+  
+  /* === EĞİTİM === */
+  
+  .education-timeline::before {
+    left: 25px !important;
+  }
+  
+  .timeline-item,
+  .timeline-item.reverse {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+  .timeline-icon {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 1.4rem !important;
+    left: 25px !important;
+    transform: translateX(-50%) !important;
+  }
+  
+  .timeline-content,
+  .timeline-item.reverse .timeline-content {
+    width: 100% !important;
+    margin-left: 55px !important;
+    margin-right: 0 !important;
+    margin-top: -25px !important;
+  }
+  
+  .timeline-content .image-wrapper {
+    height: 140px !important;
+    padding: 16px !important;
+  }
+  
+  .timeline-content .details {
+    padding: 20px !important;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.18rem !important;
+  }
+  
+  /* === SERTİFİKALAR === */
+  
+  .cert-card .image-wrapper {
+    height: 110px !important;
+    padding: 18px !important;
+  }
+  
+  .cert-info {
+    padding: 20px 18px !important;
+  }
+  
+  .cert-info h4 {
+    font-size: 1.08rem !important;
+  }
+  
+  /* === HAKKIMDA === */
+  
+  .about-corporate {
+    flex-direction: column !important;
+  }
+  
+  .profile-corporate {
+    max-width: 400px !important;
+    margin: 0 auto 30px !important;
+  }
+  
+  .profile-photo {
+    height: 300px !important;
+  }
+  
+  .profile-header h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .profile-header .role {
+    font-size: 1rem !important;
+  }
+  
+  .profile-details {
+    font-size: 0.92rem !important;
+    gap: 12px !important;
+  }
+  
+  .intro-statement {
+    padding: 18px 20px !important;
+    border-left-width: 4px !important;
+  }
+  
+  .intro-statement blockquote {
+    font-size: 1.04rem !important;
+  }
+  
+  .about-text p {
+    font-size: 0.98rem !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .interests-corporate {
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+  
+  .interest-badge {
+    font-size: 0.84rem !important;
+    padding: 8px 14px !important;
+  }
+  
+  .interest-badge i {
+    font-size: 1rem !important;
+  }
+  
+  /* === PORTFOLIO === */
+  
+  .portfolio-container {
+    gap: 16px !important;
+  }
+  
+  .portfolio-item {
+    flex: 1 1 100% !important;
+  }
+  
+  /* === CUSTOM ITEMS === */
+  
+  .custom-item {
+    width: 100% !important;
+    margin: 0 0 20px 0 !important;
+  }
+  
+  /* === CREDITS === */
+  
+  .credits {
+    font-size: 11px !important;
+    text-align: center !important;
+    bottom: 10px !important;
+    right: auto !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
 
-  /* ---------- 7. Ekstra küçük ekranlar (iPhone SE vb.) ---------- */
-  @media (max-width: 480px) {
-    #theme-toggle,
-    .mobile-nav-toggle {
-      width: 38px !important;
-      height: 38px !important;
-      font-size: 16px !important;
-    }
-    .mobile-nav-toggle { right: 58px !important; }
-    .lang-switcher .lang-btn {
-      padding: 5px 8px !important;
-      font-size: 10px !important;
-    }
+/* === ÇOK KÜÇÜK EKRANLAR (iPhone SE vb) === */
+@media (max-width: 375px) {
+  
+  /* 3 buton daha küçük */
+  #theme-toggle {
+    width: 40px !important;
+    height: 40px !important;
+    top: 12px !important;
+    right: 12px !important;
+  }
+  
+  .mobile-nav-toggle {
+    right: 62px !important;
+    top: 12px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  .lang-switcher {
+    right: 112px !important;
+    top: 12px !important;
+    padding: 6px 8px !important;
+  }
+  
+  .lang-switcher .lang-btn {
+    padding: 5px 10px !important;
+    font-size: 10px !important;
+    min-width: 30px !important;
+  }
+  
+  #header h1 {
+    font-size: 20px !important;
+  }
+  
+  #header h2 {
+    font-size: 14px !important;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
+  }
+  
+  .skill-card {
+    height: 120px !important;
+  }
+}
+
+/* === TABLET === */
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  
+  .contact .contact-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .portfolio-item {
+    flex: 1 1 45% !important;
+  }
+}
+
+/* === YATAY EKRAN === */
+@media (max-width: 768px) and (orientation: landscape) {
+  
+  #header {
+    height: auto !important;
+    min-height: 60px !important;
+  }
+  
+  section.section-show {
+    top: 65px !important;
+  }
+  
+  .profile-photo {
+    height: 250px !important;
+  }
+  
+  .mobile-nav {
+    top: 70px !important;
   }
 }
