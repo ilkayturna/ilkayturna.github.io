@@ -2798,360 +2798,303 @@ body.light-theme #theme-toggle {
 
 
 /* ============================= */
-/* MOBİL DÜZENLEME - ÖZEL FİX */
+/* MOBİL DÜZENLEMELER - SORUNSUZ & TEMİZ */
 /* ============================= */
-
-/* Tema ve Dil Butonları - Mobil Özel */
 @media (max-width: 768px) {
-  
-  /* Tema butonu - sağ üst köşe, dil butonundan uzak */
+  /* --- Genel --- */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* --- Header & Üst Alan --- */
+  #header {
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  #header .container {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+
+  #header h1 {
+    font-size: 36px !important;
+    margin-bottom: 12px;
+  }
+
+  #header h2 {
+    font-size: 18px !important;
+    margin-top: 12px;
+  }
+
+  #header .social-links {
+    margin-top: 24px;
+    justify-content: center;
+  }
+
+  #header .social-links a {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+
+  /* --- Dil Butonu --- */
+  .lang-switcher {
+    position: relative;
+    margin: 16px auto 0 !important;
+    justify-content: center;
+    order: 3;
+    width: 100%;
+    max-width: 180px;
+  }
+
+  .lang-switcher .lang-btn {
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+    min-width: 36px !important;
+  }
+
+  /* --- Tema Butonu --- */
   #theme-toggle {
     top: 12px !important;
     right: 12px !important;
     width: 42px !important;
     height: 42px !important;
+    font-size: 18px !important;
+    z-index: 99999 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+  }
+
+  /* --- Mobil Menü Toggle --- */
+  .mobile-nav-toggle {
+    top: 12px !important;
+    right: 68px !important;
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    backdrop-filter: blur(6px);
+  }
+
+  /* Mobil menü açıldığında tema ve dil butonlarını koru */
+  .mobile-nav-active #theme-toggle,
+  .mobile-nav-active .lang-switcher {
     z-index: 99999 !important;
   }
-  
-  #theme-toggle svg {
-    width: 20px !important;
-    height: 20px !important;
+
+  /* --- Navigasyon Menüsü --- */
+  .nav-menu {
+    margin-top: 24px !important;
+    order: 2;
   }
-  
-  /* Mobil menü toggle - tema butonunun solunda */
-  .mobile-nav-toggle {
-    right: 65px !important;
-    top: 12px !important;
-    z-index: 9998 !important;
-    width: 42px !important;
-    height: 42px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
-  
-  /* Dil butonu - header içinde, yukarıda değil */
-  .lang-switcher {
-    position: relative !important;
-    margin-top: 15px !important;
+
+  .nav-menu li + li {
     margin-left: 0 !important;
-    justify-content: center !important;
-    z-index: 1 !important;
   }
-  
-  .lang-switcher .lang-btn {
-    padding: 6px 12px !important;
-    font-size: 12px !important;
-    min-width: 36px !important;
+
+  .nav-menu a {
+    font-size: 17px !important;
+    padding: 8px 0;
   }
-  
-  /* Header düzeni */
-  #header {
-    padding: 15px 20px !important;
-  }
-  
-  #header h1 {
-    font-size: 24px !important;
-    margin-top: 5px !important;
-  }
-  
-  #header h2 {
-    font-size: 16px !important;
-    margin-top: 12px !important;
-  }
-  
-  /* Mobil menü - tam ekran */
-  .mobile-nav {
-    top: 65px !important;
-    right: 10px !important;
-    left: 10px !important;
-    bottom: 10px !important;
-    padding: 20px 0 !important;
-  }
-  
-  .mobile-nav a {
-    padding: 14px 24px !important;
-    font-size: 16px !important;
-  }
-  
-  /* Section düzeni */
+
+  /* --- Bölümler --- */
   section {
     top: 100px !important;
+    padding: 0 15px !important;
   }
-  
+
   section.section-show {
-    top: 70px !important;
+    top: 60px !important;
   }
-  
-  /* Kartlar - mobilde tam genişlik */
-  .icon-box,
-  .services .icon-box,
-  .interests .icon-box {
-    padding: 18px !important;
-    margin-bottom: 18px !important;
+
+  .section-title h2 {
+    font-size: 13px !important;
   }
-  
-  .icon-box h3 {
-    font-size: 15px !important;
+
+  .section-title p {
+    font-size: 28px !important;
   }
-  
-  /* Beceriler grid - 3 sütun */
+
+  /* --- Hakkımda --- */
+  .about-corporate {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .profile-corporate {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .profile-photo {
+    height: 300px !important;
+  }
+
+  .profile-header h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .profile-header .role {
+    font-size: 1rem !important;
+  }
+
+  /* --- Beceriler --- */
   .skills-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 16px !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 18px !important;
   }
-  
+
   .skill-card {
     height: 130px !important;
   }
-  
-  /* İletişim kartları */
+
+  .skill-icon {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .skill-icon svg {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  /* --- Deneyim & Eğitim --- */
+  .career-roadmap::before,
+  .education-timeline::before {
+    left: 30px !important;
+  }
+
+  .career-stage,
+  .career-stage:nth-child(even),
+  .timeline-item,
+  .timeline-item.reverse {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .stage-icon,
+  .timeline-icon {
+    margin-bottom: -30px !important;
+    left: 30px !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .stage-card,
+  .timeline-content {
+    margin-left: 70px !important;
+    margin-right: 0 !important;
+    width: calc(100% - 80px) !important;
+  }
+
+  .timeline-content .image-wrapper {
+    height: 120px !important;
+  }
+
+  /* --- İletişim --- */
   .contact .contact-grid {
     grid-template-columns: 1fr !important;
     gap: 24px !important;
     padding: 0 10px !important;
   }
-  
+
   .contact .contact-item {
-    padding: 28px 22px !important;
+    padding: 28px 20px !important;
     min-height: 200px !important;
   }
-  
+
   .contact .contact-icon {
     width: 60px !important;
     height: 60px !important;
   }
-  
+
   .contact .contact-icon svg {
     width: 30px !important;
     height: 30px !important;
   }
-  
-  .contact .contact-content h3 {
-    font-size: 1.15rem !important;
+
+  .contact .social-links {
+    gap: 12px !important;
   }
-  
-  .contact .contact-content p,
-  .contact .contact-content a {
-    font-size: 0.95rem !important;
+
+  .contact .social-links a {
+    width: 44px !important;
+    height: 44px !important;
   }
-  
-  /* Deneyim timeline */
-  .career-roadmap::before {
-    left: 25px !important;
-  }
-  
-  .stage-icon {
-    width: 50px !important;
-    height: 50px !important;
-    font-size: 1.4rem !important;
-  }
-  
-  .stage-card {
-    margin-left: 65px !important;
-    margin-right: 10px !important;
-    padding: 20px !important;
-  }
-  
-  .role-info h3 {
-    font-size: 1.2rem !important;
-  }
-  
-  .company-logo {
-    width: 48px !important;
-    height: 48px !important;
-  }
-  
-  /* Eğitim timeline */
-  .education-timeline::before {
-    left: 25px !important;
-  }
-  
-  .timeline-icon {
-    width: 50px !important;
-    height: 50px !important;
-    font-size: 1.5rem !important;
-    left: 25px !important;
-  }
-  
-  .timeline-content {
-    width: 100% !important;
-    margin-left: 55px !important;
-    margin-top: -25px !important;
-  }
-  
-  .timeline-content .details {
-    padding: 20px !important;
-  }
-  
-  .timeline-content h3 {
-    font-size: 1.2rem !important;
-  }
-  
-  /* Sertifikalar */
-  .cert-card .image-wrapper {
-    height: 110px !important;
-    padding: 18px !important;
-  }
-  
-  .cert-info {
-    padding: 20px 18px !important;
-  }
-  
-  .cert-info h4 {
-    font-size: 1.1rem !important;
-  }
-  
-  /* Hakkımda */
-  .profile-photo {
-    height: 300px !important;
-  }
-  
-  .profile-header h3 {
-    font-size: 1.5rem !important;
-  }
-  
-  .profile-header .role {
-    font-size: 1rem !important;
-  }
-  
-  .intro-statement {
-    padding: 18px 20px !important;
-  }
-  
-  .intro-statement blockquote {
-    font-size: 1.05rem !important;
-  }
-  
-  .about-text p {
-    font-size: 1rem !important;
-  }
-  
-  .interests-corporate {
-    justify-content: center !important;
-    gap: 10px !important;
-  }
-  
-  .interest-badge {
-    font-size: 0.85rem !important;
-    padding: 8px 14px !important;
-  }
-  
-  /* Portfolio */
-  .portfolio-container {
-    gap: 16px !important;
-  }
-  
+
+  /* --- Portföy --- */
+  .portfolio-container,
   .portfolio-item {
     flex: 1 1 100% !important;
   }
-  
-  /* Custom items (Eğitim/Deneyim kartları) */
-  .custom-item {
+
+  /* --- Genel Kartlar --- */
+  .custom-item,
+  .col-lg-4,
+  .icon-box,
+  .services .icon-box,
+  .interests .icon-box {
     width: 100% !important;
-    margin: 0 0 20px 0 !important;
+    margin: 10px 0 !important;
   }
-  
-  /* Section container padding */
-  section .container {
-    padding: 20px 15px !important;
-  }
-  
-  /* Credits - altbilgi */
-  .credits {
-    font-size: 11px !important;
-    text-align: center !important;
+
+  /* --- Scrollbar --- */
+  ::-webkit-scrollbar {
+    width: 6px;
   }
 }
 
-/* Çok küçük ekranlar (iPhone SE, Galaxy Fold vb) */
-@media (max-width: 375px) {
-  
-  #theme-toggle {
-    width: 38px !important;
-    height: 38px !important;
-    top: 10px !important;
-    right: 10px !important;
-  }
-  
-  .mobile-nav-toggle {
-    right: 58px !important;
-    top: 10px !important;
-    width: 38px !important;
-    height: 38px !important;
-  }
-  
+/* Ekstra Küçük Ekranlar (iPhone SE, vs.) */
+@media (max-width: 480px) {
   #header h1 {
-    font-size: 20px !important;
+    font-size: 32px !important;
   }
-  
+
   #header h2 {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
-  
+
+  .lang-switcher {
+    max-width: 160px;
+  }
+
   .lang-switcher .lang-btn {
-    padding: 5px 10px !important;
-    font-size: 11px !important;
-    min-width: 32px !important;
+    padding: 5px 8px !important;
+    font-size: 10px !important;
   }
-  
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 14px !important;
-  }
-  
-  .skill-card {
-    height: 120px !important;
-  }
-  
-  .contact .contact-item {
-    padding: 22px 18px !important;
-  }
-  
-  .stage-card,
-  .timeline-content {
-    padding: 16px !important;
-  }
-}
 
-/* Tablet (iPad, Galaxy Tab vb) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  
-  #theme-toggle {
-    width: 46px !important;
-    height: 46px !important;
+  #theme-toggle,
+  .mobile-nav-toggle {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 16px !important;
   }
-  
-  .skills-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
-  }
-  
-  .contact .contact-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-  
-  .portfolio-container {
-    gap: 18px !important;
-  }
-  
-  .portfolio-item {
-    flex: 1 1 45% !important;
-  }
-}
 
-/* Yatay ekran modları */
-@media (max-width: 768px) and (orientation: landscape) {
-  
-  #header {
-    height: auto !important;
-    min-height: 60px !important;
+  .mobile-nav-toggle {
+    right: 60px !important;
   }
-  
-  section.section-show {
-    top: 50px !important;
+
+  .section-title p {
+    font-size: 24px !important;
   }
-  
+
   .profile-photo {
-    height: 250px !important;
+    height: 260px !important;
   }
-} 
+}
